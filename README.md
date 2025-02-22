@@ -1,70 +1,107 @@
-# 8_Puzzle_Problem
-This Repository presents a comparative analysis of four search algorithms used to solve the 8-puzzle problem: Breadth-First Search (BFS), Depth-First Search (DFS), Iterative Deepening Search (IDS), and Uniform Cost Search (UCS). 
-8-Puzzle Solver using Search Algorithms
-# 8-Puzzle Solver using Search Algorithms  
+# 8-Puzzle Problem Solver
+
+This repository presents a **comparative analysis** of four search algorithms used to solve the **8-puzzle problem**:  
+- **Breadth-First Search (BFS)**  
+- **Depth-First Search (DFS)**  
+- **Iterative Deepening Search (IDS)**  
+- **Uniform Cost Search (UCS)**  
 
 ## Overview  
-This project implements four search algorithms—**Depth-First Search (DFS), Breadth-First Search (BFS), Iterative Deepening Search (IDS), and Uniform Cost Search (UCS)**—to solve the **8-puzzle problem**. The program takes an initial state and a goal state as input and finds the steps required to solve the puzzle.  
+
+The **8-puzzle problem** consists of a **3×3 grid** with **8 numbered tiles** and **one blank space**. The goal is to **rearrange** the tiles to match a given **goal state** by moving the blank space.  
+
+This project **implements and compares** four search algorithms in terms of:  
+- Number of **nodes visited**  
+- **Path cost**  
+- **Memory usage**  
+- **Execution time**  
+
+It also includes **Plotly visualizations** for performance comparison.  
 
 ## Features  
-- **Solves the 8-puzzle problem** using DFS, BFS, IDS, and UCS.  
-- **Compares algorithm performance** based on:
-  - Number of nodes visited  
-  - Path cost  
-  - Memory usage  
-  - Execution time  
-- **Visual representation of comparison** using Plotly graphs.  
+
+✔️ **Solves the 8-puzzle problem** using BFS, DFS, IDS, and UCS.  
+✔️ **Displays the solution path** step by step.  
+✔️ **Compares performance metrics** in a tabular and graphical format.  
 
 ## Input Format  
-The program expects the initial and goal states in **row-major order** as a single string input (e.g., `120345678`).  
+
+The program expects the **initial and goal states** as **row-major order strings** (e.g., `"120345678"`).  
+
+### Example Input  
+```
+Enter start state: 120345678  
+Enter goal state: 012345678  
+```
 
 ## Output Format  
-- The sequence of moves required to reach the goal state.  
-- Performance metrics for each algorithm.  
+
+- **Sequence of moves** to reach the goal state.  
+- **Performance metrics** for each algorithm.  
+- **Comparison graph** using Plotly.  
+
+### Example Output  
+```
+-----------------
+BFS Algorithm
+-----------------
+Time Taken: 0.001004 seconds
+Path Cost: 2
+Nodes Visited: 3
+```
 
 ## Setup & Installation  
+
 ### Prerequisites  
-- Python 3.x  
-- Jupyter Notebook  
+Make sure you have the following installed:  
+- **Python 3.x**  
+- **Jupyter Notebook**  
 - Required libraries: `numpy`, `collections`, `heapq`, `plotly`  
 
 ### Installation Steps  
-1. Clone the repository:  
-   ```bash
-   git clone https://github.com/yourusername/8-puzzle-solver.git
-   cd 8-puzzle-solver
 
-2.Install dependencies:
- pip install numpy plotly
+```bash
+# Clone the repository
+git clone https://github.com/yourusername/8-puzzle-solver.git
+cd 8-puzzle-solver
 
-3.Run the Jupyter Notebook:
+# Install dependencies
+pip install numpy plotly
 
- jupyter notebook AI_assignment.ipynb
+# Run the Jupyter Notebook
+jupyter notebook AI_assignment.ipynb
+```
 
-## Algorithms Implemented
-1. Breadth-First Search (BFS)
-Explores nodes level by level.
-Guarantees the shortest path but uses more memory.
-2. Depth-First Search (DFS)
-Explores as deep as possible before backtracking.
-Memory-efficient but may not find the shortest path.
-3. Iterative Deepening Search (IDS)
-Combines BFS and DFS by incrementally increasing depth.
-Ensures optimality while managing memory efficiently.
-4. Uniform Cost Search (UCS)
-Expands the least costly node first.
-Guarantees the optimal solution.
+## Algorithms Implemented  
 
-## Performance Comparison
-The project includes a comparison table and bar charts to analyze the performance of all algorithms based on:
+### 1️⃣ Breadth-First Search (BFS)  
+✔ Explores nodes **level by level**.  
+✔ Guarantees the **shortest path** but requires **more memory**.  
 
-Time taken
-Path cost
-Nodes visited
-Memory usage
-Results
+### 2️⃣ Depth-First Search (DFS)  
+✔ Explores **as deep as possible** before backtracking.  
+✔ **Memory-efficient**, but may not find the **shortest path**.  
 
-The results are available in the Word document included in the repository (Comparison_Report.docx).
+### 3️⃣ Iterative Deepening Search (IDS)  
+✔ Combines BFS and DFS by **incrementally increasing depth**.  
+✔ Ensures **optimality** while managing **memory efficiently**.  
 
-## Contributors
-Najam Ul Islam Saeed
+### 4️⃣ Uniform Cost Search (UCS)  
+✔ Expands the **least costly node** first.  
+✔ **Guarantees** the **optimal solution**.  
+
+## Performance Comparison  
+
+This project includes a **comparison table and bar charts** to analyze performance based on:  
+- **Time Taken**  
+- **Path Cost**  
+- **Nodes Visited**  
+- **Memory Usage**  
+
+📌 **Results are available in** `Comparison_Report.docx`.  
+
+## Contributor  
+
+**Najam Ul Islam Saeed**  
+
+
